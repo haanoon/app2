@@ -217,6 +217,7 @@ class _CartScreenState extends State<CartScreen> {
       totalAmount: total,
       orderTime: DateTime.now(),
       pickupTime: pickupTime,
+      date: DateTime.now(),
     );
 
     await DataService.addOrder(order); // Use await to ensure the order is added before proceeding

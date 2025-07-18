@@ -69,6 +69,7 @@ class Order {
   final double totalAmount;
   final DateTime orderTime;
   final String pickupTime;
+  final DateTime date;
   String status; // pending, preparing, ready, completed
 
   Order({
@@ -79,6 +80,7 @@ class Order {
     required this.totalAmount,
     required this.orderTime,
     required this.pickupTime,
+    required this.date,
     this.status = 'pending',
   });
 
@@ -95,6 +97,9 @@ class Order {
           ? DateTime.parse(map['orderTime'])
           : DateTime.now(),
       pickupTime: map['pickupTime'] ?? '',
+      date: (map['date'] != null)
+          ? DateTime.parse(map['date'])
+          : DateTime.now(),
       status: map['status'] ?? 'pending',
     );
   }
@@ -106,6 +111,7 @@ class Order {
         'totalAmount': totalAmount,
         'orderTime': orderTime.toIso8601String(),
         'pickupTime': pickupTime,
+        'date': date.toIso8601String(),
         'status': status,
       };
 }

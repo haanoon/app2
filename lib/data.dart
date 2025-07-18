@@ -21,10 +21,21 @@ class DataService {
   }
 
   static Future<void> addOrder(app_models.Order order) async {
+    final orderWithDate = app_models.Order(
+      id: order.id,
+      studentId: order.studentId,
+      studentName: order.studentName,
+      items: order.items,
+      totalAmount: order.totalAmount,
+      orderTime: order.orderTime,
+      pickupTime: order.pickupTime,
+      date: order.date ?? DateTime.now(),
+      status: order.status,
+    );
     await FirebaseFirestore.instance
         .collection('orders')
         .doc(order.id)
-        .set(order.toFirestore());
+        .set(orderWithDate.toFirestore());
   }
 
   static Future<void> updateOrderStatus(String orderId, String status) async {
