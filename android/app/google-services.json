@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "89420888125",
+    "project_id": "chandrettans-826de",
+    "storage_bucket": "chandrettans-826de.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:89420888125:android:514e70a1ca70129ccdd254",
+        "android_client_info": {
+          "package_name": "com.example.chandrettan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCv7GHx-kAeO-WvaCVS7jcjc0u2ZXA_Xgo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:89420888125:android:a8d78c1a04a2b504cdd254",
+        "android_client_info": {
+          "package_name": "com.example.chandrettans"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCv7GHx-kAeO-WvaCVS7jcjc0u2ZXA_Xgo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
